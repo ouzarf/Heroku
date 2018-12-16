@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>{{record.full_name}}</h1>
+
+<p class="story">{{record.story}}</p>
+
+<p><a href="{{record.url}}">Read the story at the Los Angeles Times</a></p>
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <div class="map">
+      <img class='img-fluid' src="{{ map_url }}" alt="">
+    </div>
+
+  </div>
+  <div class="col-sm-6">
+    <div class="streetview">
+      <img  class='img-fluid' src="{{ streetview_url }}" alt="">
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
